@@ -13,28 +13,38 @@
     <title>Web Development Tutorials</title>
 </head>
 <body>
-    <header class="animate__animated animate__fadeInDown">
+    <header>
         <div class="container">
             <div class="header-logo">
-                <img src="/Front-end/image/logo.png" alt="Tutorials Logo">
+                <img src="/Front-end/image/logo.png " alt="Tutorials Logo">
             </div>
             <nav class="header-nav">
-                <a href="/Front-end/index.html" class="nav-link">Home</a>
-                <a href="/Front-end/html/tutorials.html" class="nav-link">Tutorials</a>
-                <a href="/Front-end/html/exercise.html" class="nav-link">Exercises</a>
-                <a href="/Front-end/html/blog.html" class="nav-link">Blog</a>
-                <a href="/Front-end/html/about.html" class="nav-link">About</a>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#tutorials" class="nav-link">Tutorials</a>
+                <a href="#exercises" class="nav-link">Exercises</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#about" class="nav-link">About</a>
             </nav>
             <div class="header-item-service">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-user"></i>
-            </div>
+                <div class="search-container">
+                  <input type="text" id="searchInput" placeholder="Nhập từ khóa...">
+                  <button class="btn-icon" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="btn-icon"><i class="fas fa-bell"></i></button>
+                <a href="/Front-end/html/Sign_in_up.html" class="login-btn">Login</a>
+              </div>
         </div>
     </header>
 
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-content">
+            <input type="text" placeholder="Search for tutorials" class="search-input">
+            <button class="search-close">&times;</button>
+        </div>
+    </div>
+
     <main>
-        <section id="home" class="hero animate__animated animate__fadeIn">
+        <section id="home" class="hero">
             <div class="container">
                 <h1 class="hero-title">Master Web Development</h1>
                 <p class="hero-subtitle">Comprehensive Tutorials for Beginners and Pros</p>
@@ -45,7 +55,7 @@
             </div>
         </section>
 
-        <section id="tutorials" class="popular-courses animate__animated animate__fadeInUp">
+        <section id="tutorials" class="popular-courses">
             <div class="container">
                 <h2 class="section-title">Popular Tutorials</h2>
                 <div class="course-grid">
@@ -130,13 +140,12 @@
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Web Development Tutorials</p>
-            </div>
+            
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="/Front-end/js/index_script.js"></script>
 </body>
 </html>

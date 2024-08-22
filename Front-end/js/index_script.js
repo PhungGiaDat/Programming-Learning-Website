@@ -67,3 +67,4 @@ document.querySelectorAll('.course-card').forEach(card => {
         });
     });
 });
+
